@@ -1,22 +1,22 @@
 # AD Listing System
 
-A ad listing system built with Spring Boot, React, PostgreSQL, and RabbitMQ. The system allows users to register, create, and update job listings, while administrators can approve or reject listings. The system also includes reporting and messaging features.
+A ad listing system built with Spring Boot, React, PostgreSQL, and RabbitMQ. The system allows users to register, create, and update ad listings, while administrators can approve or reject listings. The system also includes reporting and messaging features.
 
 ## Features
 
 - **User Registration**: Users can register with their name, phone number, email, and password.
 - **Authentication**: JWT token authentication for secure login and access.
-- **Admin User**: An admin user can approve or reject job listings.
-- **Job Listing Management**:
-  - Users can create and update job listings.
+- **Admin User**: An admin user can approve or reject ad listings.
+- **ad Listing Management**:
+  - Users can create and update ad listings.
   - Listings are initially passive and must be approved by an admin.
-- **Listing Approval**: Admins can approve or reject job listings.
-- **Recent Listings**: Service to list the last 10 approved job listings.
-- **Admin View**: Service for admins to view inactive (pending) job listings.
-- **Message Queue**: Approved job listings are sent to a RabbitMQ message queue.
-- **Reporting**: A reporting service generates reports for each job listing.
+- **Listing Approval**: Admins can approve or reject ad listings.
+- **Recent Listings**: Service to list the last 10 approved ad listings.
+- **Admin View**: Service for admins to view inactive (pending) ad listings.
+- **Message Queue**: Approved ad listings are sent to a RabbitMQ message queue.
+- **Reporting**: A reporting service generates reports for each ad listing.
   - Reports include details such as creation date, user, and view count.
-- **Reporting API**: API for generating and updating reports based on job listing ID.
+- **Reporting API**: API for generating and updating reports based on ad listing ID.
 
 ## Technologies Used
 
